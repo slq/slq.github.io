@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Sketchnote</title>
-    <link>https://slq.github.io/post/index.xml</link>
-    <description>Recent content in Posts on Sketchnote</description>
+    <title>Recommendations on Sketchnote</title>
+    <link>https://slq.github.io/tags/recommendations/index.xml</link>
+    <description>Recent content in Recommendations on Sketchnote</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Mon, 23 Jan 2017 22:08:12 +0200</lastBuildDate>
-    <atom:link href="https://slq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://slq.github.io/tags/recommendations/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Interesting sites</title>
