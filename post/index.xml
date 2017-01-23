@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sketchnote</title>
-    <link>https://slq.github.io/sketchnote/post/index.xml</link>
+    <link>https://slq.github.io/post/index.xml</link>
     <description>Recent content in Posts on Sketchnote</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
     <lastBuildDate>Mon, 23 Jan 2017 20:53:58 +0100</lastBuildDate>
-    <atom:link href="https://slq.github.io/sketchnote/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://slq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Good to Great Book Review</title>
-      <link>https://slq.github.io/sketchnote/good-to-great-book-review/</link>
+      <link>https://slq.github.io/good-to-great-book-review/</link>
       <pubDate>Mon, 23 Jan 2017 20:53:58 +0100</pubDate>
       
-      <guid>https://slq.github.io/sketchnote/good-to-great-book-review/</guid>
+      <guid>https://slq.github.io/good-to-great-book-review/</guid>
       <description>&lt;p&gt;I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed analysis on how good companies became great.&lt;/p&gt;
 </description>
     </item>
