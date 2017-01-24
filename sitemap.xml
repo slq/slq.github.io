@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://slq.github.io/contact/</loc>
+    <lastmod>2017-01-23T23:12:14+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://slq.github.io/interesting-sites/</loc>
     <lastmod>2017-01-23T22:08:12+02:00</lastmod>
   </url>
@@ -18,25 +23,8 @@
   </url>
   
   <url>
-    <loc>https://slq.github.io/tags/recommendations/</loc>
-    <lastmod>2017-01-23T22:08:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://slq.github.io/</loc>
-    <lastmod>2017-01-23T22:08:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://slq.github.io/tags/sketchnote/</loc>
-    <lastmod>2017-01-23T22:08:12+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://slq.github.io/tags/</loc>
+    <lastmod>2017-01-23T23:12:14+02:00</lastmod>
     <priority>0</priority>
   </url>
   
