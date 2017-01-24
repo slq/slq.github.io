@@ -2,18 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://slq.github.io/contact/</loc>
-    <lastmod>2017-01-23T23:12:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slq.github.io/interesting-sites/</loc>
+    <loc>https://slq.github.io/2017/01/23/interesting-sites/</loc>
     <lastmod>2017-01-23T22:08:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://slq.github.io/good-to-read/</loc>
+    <loc>https://slq.github.io/2017/01/23/good-to-read/</loc>
     <lastmod>2017-01-23T21:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/page/about/</loc>
+    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/page/contact/</loc>
+    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/project/my-awesome-project/</loc>
+    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/2014/09/28/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/2014/04/02/goisforlovers/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/2014/04/02/migrate-from-jekyll/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/2014/04/02/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/development/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/go/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/golang/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/page/</loc>
+    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -23,8 +83,31 @@
   </url>
   
   <url>
+    <loc>https://slq.github.io/project/</loc>
+    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://slq.github.io/</loc>
-    <lastmod>2017-01-23T23:12:14+02:00</lastmod>
+    <lastmod>2017-01-23T22:08:12+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/templates/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://slq.github.io/tags/themes/</loc>
+    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
