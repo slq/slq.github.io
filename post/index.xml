@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>My Name</copyright>
-    <lastBuildDate>Mon, 23 Jan 2017 22:08:12 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jan 2017 11:55:50 +0000</lastBuildDate>
     <atom:link href="https://slq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to reassign tuple values</title>
+      <link>https://slq.github.io/2017/01/28/scala-how-to-reassign-tuple/</link>
+      <pubDate>Sat, 28 Jan 2017 11:55:50 +0000</pubDate>
+      
+      <guid>https://slq.github.io/2017/01/28/scala-how-to-reassign-tuple/</guid>
+      <description>&lt;p&gt;If you would like to &lt;em&gt;update&lt;/em&gt; tuple values in Scala, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;var tuple = (1, &amp;quot;test&amp;quot;)
+tuple._2 = &amp;quot;new&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It would not be possible. Scala will not compile this kind of code.&lt;/p&gt;
+
+&lt;p&gt;The reason is that you cannot reassign tuple values.  They&amp;rsquo;re intentionally immutable: once you have created a tuple. This is very useful for writing correct code.&lt;/p&gt;
+
+&lt;p&gt;But what if you want a different tuple?  That&amp;rsquo;s where the &lt;code&gt;copy&lt;/code&gt; method comes in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val tuple = (1, &amp;quot;test&amp;quot;)
+val another = tuple.copy(_2 = &amp;quot;new&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or if you really want to use a &lt;code&gt;var&lt;/code&gt; to contain the tuple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;var tuple = (1, &amp;quot;test&amp;quot;)
+tuple = tuple.copy(_2 = &amp;quot;new&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As an alternative, if you really, really want your values to change individually, you can use a &lt;code&gt;case class&lt;/code&gt; instead (probably with an &lt;code&gt;implicit&lt;/code&gt; conversion so you can get a tuple when you need it) :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;case class Doublet[A,B](var _1: A, var _2: B) {}
+implicit def doublet_to_tuple[A,B](db: Doublet[A,B]) = (db._1, db._2)
+val doublet = Doublet(1, &amp;quot;test&amp;quot;)
+doublet._2 = &amp;quot;new&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nevertheless, I do not recommend this kind of code :smile:. It usually means you have poor design and should think twice how to achieve what you want without modyfying tuples.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;http://stackoverflow.com/questions/7142838/in-scala-how-can-i-reassign-tuple-values&#34;&gt;stackoverflow&lt;/a&gt; for explanation.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Interesting sites</title>
@@ -20,29 +62,15 @@
 
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;hugo-documentation&#34;&gt;Hugo documentation&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;https://gohugo.io/overview/quickstart/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;casper-hugo-theme&#34;&gt;Casper Hugo Theme&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://themes.gohugo.io/casper/&#34;&gt;http://themes.gohugo.io/casper/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;valère-jeantet-theme-creator&#34;&gt;Valère JEANTET - theme creator&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://vjeantet.fr/&#34;&gt;http://vjeantet.fr/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;formspree&#34;&gt;Formspree&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Hugo documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://formspree.io/&#34;&gt;Formspree&lt;/a&gt; allows to create web form which will be forwarded to your email every time its submitted. 1000 forms per month for free!&lt;/p&gt;
 
-&lt;h4 id=&#34;forestry&#34;&gt;Forestry&lt;/h4&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://forestry.io/&#34;&gt;Forestry&lt;/a&gt; is full-featured CMS for Hugo, Jekyll and GitHubPages. Free for personal usage.&lt;/p&gt;
 
-&lt;h4 id=&#34;disqus&#34;&gt;Disqus&lt;/h4&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; We all know it&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://forismatic.com/en/api/&#34;&gt;Forismatic&lt;/a&gt; gives you API to query for famous quotes.&lt;/p&gt;
 
 &lt;h4 id=&#34;images&#34;&gt;Images&lt;/h4&gt;
 
@@ -51,9 +79,11 @@
 &lt;li&gt;&lt;a href=&#34;http://twittercoverz.com/en&#34;&gt;TwitterCoverz&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;other-interesing-hugo-themes&#34;&gt;Other interesing Hugo themes&lt;/h4&gt;
+&lt;h4 id=&#34;interesing-hugo-themes&#34;&gt;Interesing Hugo themes&lt;/h4&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/theme/ghostwriter/&#34;&gt;Ghostwriter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/casper/&#34;&gt;Casper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/highlights/&#34;&gt;Highlights&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/hugo-alabaster-theme/&#34;&gt;Alabaster&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/hugo-identity-theme/&#34;&gt;Hugo Identity&lt;/a&gt;&lt;/li&gt;
