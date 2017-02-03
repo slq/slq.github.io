@@ -7,8 +7,128 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>My Name</copyright>
-    <lastBuildDate>Sat, 28 Jan 2017 11:55:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Feb 2017 23:45:50 +0000</lastBuildDate>
     <atom:link href="https://slq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Suprising casts</title>
+      <link>https://slq.github.io/2017/02/03/suprising-cast/</link>
+      <pubDate>Fri, 03 Feb 2017 23:45:50 +0000</pubDate>
+      
+      <guid>https://slq.github.io/2017/02/03/suprising-cast/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;int amount = 0;
+amount += 1.5;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I expected javac to complain about calling &lt;code&gt;amount += 1.5;&lt;/code&gt; without an explicit cast. Most of us treat this as &lt;code&gt;amount = amount + 1.5;&lt;/code&gt; However, it is rather &lt;code&gt;amount = (int)(amount + 1.5);&lt;/code&gt; That&amp;rsquo;s right, &lt;code&gt;javac&lt;/code&gt; adds an explicit cast when we use a compound operation in Java. It is described in the Java Language Specification section 15.26.2 &amp;ldquo;Compound Assignment Operators&amp;rdquo;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A compound assignment expression of the form E1 op= E2 is equivalent to E1 = (T)((E1) op (E2)), where T is the type of E1, except that E1 is evaluated only once.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Consider the following examples.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class CastSurprise {
+  public static void main(String... args) {
+    // case 1:
+    char c1 = &#39;a&#39; + 5;  // compiles
+
+    // case 2:
+    char c2 = &#39;a&#39;;
+    c2 = c2 + 5; // does not compile
+
+    // case 3:
+    char c3 = &#39;a&#39;;
+    c3 += 5; // compiles
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In case 1, javac could determine at static compile time that the value would not lose precision. If instead of 5 we add 500_000, then javac would complain, because we would overflow the 16 bit char type.&lt;/p&gt;
+
+&lt;p&gt;In case 2, since we are increasing c2 without an explicit cast, javac cannot guarantee that the result would fit inside 16 bits. It thus forces us to add a cast.&lt;/p&gt;
+
+&lt;p&gt;In case 3, the cast to char is added by the compiler. As we saw above, the statement c3 += 5; is equivalent to c3 = (char)(c3 + 5);&lt;/p&gt;
+
+&lt;h3 id=&#34;left-hand-operands&#34;&gt;Left-Hand Operands&lt;/h3&gt;
+
+&lt;p&gt;You can find the definition in &lt;code&gt;JLS 15.7.1&lt;/code&gt;. Try figure it out before running them:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class Test1 { // JLS 15.7.1
+  public static void main(String... args) {
+    int i = 2;
+    int j = (i = 3) * i;
+    System.out.println(j);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Left-Hand Operand Is Evaluated First&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the example, the &lt;code&gt;*&lt;/code&gt; operator has a left-hand operand that contains an assignment to a variable and a right-hand operand that contains a reference to the same variable. The value produced by the reference will reflect the fact that the assignment occurred first.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;OUTPUT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now for the second one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class Test2 {// JLS 15.7.1
+  public static void main(String... args) {
+    int a = 9;
+    a += (a = 3); // first example
+    System.out.println(a);
+    int b = 9;
+    b = b + (b = 3); // second example
+    System.out.println(b);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the example, the two assignment statements both fetch and remember the value of the left-hand operand, which is 9, before the right-hand operand of the addition operator is evaluated, at which point the variable is set to 3.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;OUTPUT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;12
+12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And our last one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class Test3 {// JLS 15.7.1
+  public static void main(String... args) {
+    int j = 1;
+    try {
+      int i = forgetIt() / (j = 2);
+    } catch (Exception e) {
+      System.out.println(&amp;quot;Now j = &amp;quot; + j);
+    }
+  }
+
+  static int forgetIt() throws Exception {
+    throw new Exception(&amp;quot;I&#39;m outta here!&amp;quot;);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;That is, the left-hand operand forgetIt() of the operator / throws an exception before the right-hand operand is evaluated and its embedded assignment of 2 to j occurs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;OUTPUT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.Exception: I&#39;m outta here!
+Now j = 1
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>How to reassign tuple values</title>
@@ -89,16 +209,6 @@ doublet._2 = &amp;quot;new&amp;quot;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/hugo-identity-theme/&#34;&gt;Hugo Identity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/air/&#34;&gt;Air&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Good to Read</title>
-      <link>https://slq.github.io/2017/01/23/good-to-read/</link>
-      <pubDate>Mon, 23 Jan 2017 21:54:24 +0200</pubDate>
-      
-      <guid>https://slq.github.io/2017/01/23/good-to-read/</guid>
-      <description>&lt;p&gt;I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed analysis on how good companies became great.&lt;/p&gt;
 </description>
     </item>
     
