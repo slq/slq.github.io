@@ -1,12 +1,13 @@
 ---
 layout: post
-author: ted
+title:  "Książki dla startupowca"
+date:   2019-03-23 21:03:36 +0530
+categories: Startup Business
 ---
-
-# Książki dla startupowca
----
-
 Jakiś czas temu poszedłem na dyskusję o ekosystemie startupowym. Prowadzący wyrwał mnie z zaskoczenia do dyskusji z ekspertami, którzy byli zaskakująco zgodni w twierdzeniu, że trzeba wspierać, dzielić się wiedzą i organizować, a pojawi się ekosystem. Następnym razem będę się mniej krzywił. Wyrwany do odpowiedzi mówiłem o tym, że brakuje nam przede wszystkim budulca ekosystemu. Dobrych startupów mamy więcej niż kiedykolwiek. Ale ciągle zdecydowanie za mało.
+
+![My helpful screenshot](/assets/images/books.jpg)
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@thoughtcatalog?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Thought Catalog"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Thought Catalog</span></a>
 
 Kto ma się z kim dzielić wiedzą jeśli w 40 milionowym kraju startupów jest tysiąc, funduszy VC pięćdziesiąt, a w całej branży technologicznej pracuje może 100.000 osób, z czego ogromna większość to programiści sprzedawani na godziny. A jak zrobić, żeby było więcej startupowców? Trzeba robić więcej startupów, które będą ich zatrudniać. Jak? Normalnie. Ciężką codzienną pracą nad produktem, sprzedażą i marketingiem. Ekosystem z prawdziwego zdarzenia będzie wtedy gdy ryzyko podjęcia pracy lub założenia w startupie nieco się zmniejszy na skutek podaży projektów. Zbankrutowałeś lub wywalili cię z roboty? Nic nie szkodzi, 3 ulice dalej jest startup, który chętnie skorzysta z twojego dotychczasowego doświadczenia.
 
