@@ -64,5 +64,9 @@
 		gtag('config', '{{ site.plainwhite.analytics_id }}');
 	</script>
     {%- endif -%}
+
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
   </body>
 </html>
