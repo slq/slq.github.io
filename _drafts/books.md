@@ -5,7 +5,6 @@ date:   2019-03-23 21:03:36 +0530
 categories: Startup Business
 ---
 Jakiś czas temu poszedłem na dyskusję o ekosystemie startupowym. Prowadzący wyrwał mnie z zaskoczenia do dyskusji z ekspertami, którzy byli zaskakująco zgodni w twierdzeniu, że trzeba wspierać, dzielić się wiedzą i organizować, a pojawi się ekosystem. Następnym razem będę się mniej krzywił. Wyrwany do odpowiedzi mówiłem o tym, że brakuje nam przede wszystkim budulca ekosystemu. Dobrych startupów mamy więcej niż kiedykolwiek. Ale ciągle zdecydowanie za mało.
-
 ![My helpful screenshot](/assets/images/books.jpg)
 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@thoughtcatalog?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Thought Catalog"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Thought Catalog</span></a>
 
@@ -61,9 +60,9 @@ Amazon rozebrany na czynniki pierwsze. Ta książka pozwoliła mi dużo lepiej z
 
 16. UPSTARTS – BRAD STONE
 Wiwisekcja Ubera oraz AirBnB. Okazuje sie, że Uber nie jest taki zły jak go malują – a AirBnB takie cukierkowe. Jeśli próbujesz rozruszać regulowaną branżę, próbujesz rozkruszać zabetonowane publiczne instytucje lub prowadząc biznes masz dużo styczności z samorządami to zdecydowanie warto przeczytać. Jeśli ciekawi was lobbing i praktyki na styku lobbingu i PR prowadzone przez duże startupy (korporacje?) to też zdecydowanie warto ją przeczytać.
-
+""
 17. CHAOS MONKEYS – ANTONIO GARCIA MARTINEZ
-Autobiografia startupowego cwaniaka. Zaczyna się od pracy w Goldman Sachs a potem przenosi się do Silicon Valley. Jest w tej historii Facebook, Twitter, Ycombinator, pozwy sądowe i ogromna ilość ważnych startupowych lekcji. Trochę przypomina książkę Dana Lyonsa o Hubspocie, ale jest od niej znacznie, znacznie lepsza. Rzadko da się przeczytać książkę nie pisaną z perspektywy CEO (Autor jest CEO tylko przez część tej książki), co jest dodatkowym plusem z punktu widzenia ludzi, którzy są na niższych pozycjach w firmach technologicznych. Jeśli zastanawiasz się jak wyglądają bebechy robienia startupów finansowanych za pomocą venture capital – wyglądają one mniej więcej tak.
+A""""""""""""""""""'''''''''''''''''''''''na się od pracy w Goldman Sachs a potem przenosi się do Silicon Valley. Jest w tej historii Facebook, Twitter, Ycombinator, pozwy sądowe i ogromna ilość ważnych startupowych lekcji. Trochę przypomina książkę Dana Lyonsa o Hubspocie, ale jest od niej znacznie, znacznie lepsza. Rzadko da się przeczytać książkę nie pisaną z perspektywy CEO (Autor jest CEO tylko przez część tej książki), co jest dodatkowym plusem z punktu widzenia ludzi, którzy są na niższych pozycjach w firmach technologicznych. Jeśli zastanawiasz się jak wyglądają bebechy robienia startupów finansowanych za pomocą venture capital – wyglądają one mniej więcej tak.
 
 # Wartościowe książki o sprzedaży i marketingu
 ---
@@ -110,7 +109,7 @@ Krótkie, lekkie przedstawienie idei value based pricing. Ta książka jest dost
 Artur Jabłoński napisał bardzo dobrą i krótką książkę. Zrobiłem dużo notatek a i sporo podrzucałem bezpośrednio na firmowy kanał dedykowany promocji naszej firmy. Jeśli robicie dużo content marketingu lub w inny sposób pracujecie w internecie słowem to książka dla was. Jeśli jesteście zajęci to także jest książka dla was ponieważ autor postanowił nas nie zamęczyć i wyczerpał temat w 165 stron, więc przeczytałem ją w pół soboty.
 Książka jest mocno techniczna, odwołuje się do badań i systematyzuję wiedzę. Na uwagę zasługują też dobre przykłady (których jest szczególnie przy końcu nieco za mało). Oprócz tego, że autor tłumaczy nam jak pisać – również pokazuje nam to za pomocą tego jak napisana jest ta książka (bardzo dobrze).
 Na szczególną pochwałę zasługuje konwersacyjny styl i „gra" z czytelnikiem. Nie ma nic gorszego niż nudny artykuł/prezentacja/książka o storytellingu i Arturowi udało się nie popełnić kiepsko napisanej książki o pisaniu
-
+'
 # Inspirujące książki o biznesie
 ---
 
@@ -140,8 +139,8 @@ Tad Witkowiczto jedyny Polak, który wprowadził dwie spółki na Nasdaq. Ogląd
 Go Global to zbiór wywiadów z przedsiębiorcami, którzy dokonali udanej ekspansji zagranicznej z Polski. Od tej książki zaczynałem lektury uzupełniające, które pomogły mi pomóc kilku spółkom w zwiększeniu swojego zasięgu oddziaływania. Większość z omawianych spółek jest B2C jak i nie technologiczna, ale i tak bardzo warto przeczytać, żeby zrozumieć z jak dużym deficytem wiedzy nt. Robienia biznesu międzynarodowo mamy w Polsce do czynienia. Po przeczytaniu tej książki wiedziałem, że tym właśnie chcę się zająć na długi czas. A dodatkowo mam niewytłumaczalny sentyment do showmaństwa (szamaństwa?) ekonomicznego prof. Rybińskiego, co czyni tą książkę jeszcze lepszą w odbiorze.
 
 ## Amerykańscy autorzy:
----
-
+        -
+    
 7. SCREW IT LET'S DO IT – RICHARD BRANSON (2006)
 Bardzo dobra książeczka (128 stron) o dość luźnym i idealistycznym podejściu do biznesu sir Richarda Bransona. Jeśli obawiacie się przed stawianiem pierwszych kroków i chcecie nauczyć się ograniczania ryzyka osobistego (fenomenalna historia założenia linii lotniczych) przy startowaniu nowych przedsięwzięć zdecydowanie warto przeczytać. 
 
