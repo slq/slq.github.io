@@ -16,11 +16,14 @@ permalink: /blog/:title/
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
+
 plainwhite:
   name: Slawek Plamowski
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
+  analytics_id: "UA-161768239-1"
+  disqus_shortname: bestincloud
 
   # generate social links in footer
   social_links:
